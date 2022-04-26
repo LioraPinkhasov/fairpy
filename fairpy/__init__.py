@@ -20,3 +20,4 @@ class items:
 	from fairpy.items.min_sharing import proportional_allocation_with_min_sharing, envyfree_allocation_with_min_sharing, maxproduct_allocation_with_min_sharing
 	from fairpy.items.bounded_sharing import proportional_allocation_with_bounded_sharing, efficient_envyfree_allocation_with_bounded_sharing
 	from fairpy.items.propm_allocation import propm_allocation
+    from fairpy.items.multi_machine_fair_alloc import multi_machine_fair_alloc

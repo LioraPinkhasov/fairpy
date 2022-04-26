@@ -204,7 +204,15 @@ def dummy_matrix_matrix_algorithm(valuations:ValuationMatrix, first_agent:int=0)
         if i_agent >= num_agents:
             i_agent = 0
     return bundles
-
+"""
+Allows usage of string instead of list in running the function
+"""
+def dummy_multi_machine_fair_alloc( values:str, k:int=3)->tuple[tuple[int]]:
+    """
+    multi_machine_fair_alloc("1 2 3 4 5 6 4 3 2", 3)
+    """
+    list=values.split()
+    return multi_machine_fair_alloc(list,k)
 
 if __name__ == "__main__":
     import doctest
